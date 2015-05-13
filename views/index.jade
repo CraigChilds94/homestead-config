@@ -1,0 +1,41 @@
+// Layout
+extends layout
+
+// Main content
+block content
+
+  h1= title
+  
+  hr
+  
+  // Some basic details
+  h3= "Basic Details"
+  p Your Homestead IP is
+    b  #{conf.ip}.
+  p Using 
+    b  #{conf.memory} of Memory and #{conf.cpus} CPU(S).
+  p Running in
+    b  #{conf.provider}
+  
+  // Listing of folders
+  h3= "Folders"
+  ul
+    each val in conf.folders
+      li
+        p: b= val.map
+        p: em= val.to
+  
+  // Listing of sites
+  h3= "Sites"
+  ul
+    each val in conf.sites
+      li
+        p: b= val.map
+        p: em= val.to
+
+  // Listing of Databases
+  h3= "Databases"
+  ul
+    each val in conf.databases
+      li
+        p: b= val
