@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 
     data.conf = conf;
     res.render('index', data);
+    
 });
 
 module.exports = router;
