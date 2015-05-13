@@ -1,6 +1,12 @@
 {
   "name": "homestead-config",
-  "version": "0.0.0",
+  "description": "Homestead Configuration App",
+  "author": "Craig Childs <childscraig17@gmail.com>",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/CraigChilds94/homestead-config"
+  },
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
